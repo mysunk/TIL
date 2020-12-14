@@ -6,3 +6,16 @@ Dynamic Programming
 * Let K be solution of arr[:i]
 * K[i] = max(K[i-1] + arr[i], arr[i])
 * See also: [here](https://hwan-shell.tistory.com/m/117?category=771708)
+
+### Prerequisites
+* optimal substructure: if an optimal solution can be constructed from optimal solutions of its subproblems
+* overlapping subproblem
+
+### Two approaches [[ref](https://velog.io/@hanturtle/%EB%8F%99%EC%A0%81%EA%B3%84%ED%9A%8D%EB%B2%95)]
+#### 1) Top-down
+* recursion
+* using memoization
+* function call overhead
+#### 2) Bottom-up
+* approach to filling up __DP table__
+* have to filling up all the elements of table
