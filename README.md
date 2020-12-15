@@ -1,12 +1,6 @@
 TIL
 =====================
-today I learned! :books:  
-
-# Strategy
-* 1일 1커밋 제발..
-* 쓸데없는 형식에 시간 쓰지 말것! 내용이 중요하다
-* commit log는 당일날 정리해서 하루에 한개만 남기기  
-* 폴더는 최소한으로 만들기
+today I learned :books:  
 
 # Context
 ## CS
