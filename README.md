@@ -12,6 +12,7 @@ today I learned! :books:
 ## CS
 ### Data structures and algorithms
 >* [dynamic programming](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/DP.md)
+>* [binary tree](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/Tree.md)
 
 ## Etc
 >* [git struggles](https://github.com/mysunk/TIL/blob/master/etc/git-struggles.md)
