@@ -16,9 +16,15 @@ Dynamic Programming
 * recursion
 * using memoization
 * function call overhead
+* stack (function call) + heap (table)
+* generally, available heap memory is much larger than stack memory
+  * heap: 256 Mb
+  * stack: 1 Mb
+
 #### 2) Bottom-up
 * approach to filling up __DP table__
 * have to filling up all the elements of table
+* heap (table)
 
 #### Can every problem on Dynamic Programming be solved by both top-down and bottom-up approaches?  
 * answer: yes
