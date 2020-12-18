@@ -1,13 +1,13 @@
 Binary tree
 ==================
 
-## Problems
+## tricky problems
 ### Smallest Subtree with all the Deepest Nodes
 * problem: [link](https://leetcode.com/explore/challenge/card/december-leetcoding-challenge/570/week-2-december-8th-december-14th/3563/)  
 * solution:
 ```python
 class Solution:
-    def subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
+    def subtreeWithAllDeepest(self, root):
         def dfs(node):
             # if leaf
             if not node:
