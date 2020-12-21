@@ -12,6 +12,7 @@ today I learned :books:
 ## Etc
 >* [git struggles](https://github.com/mysunk/TIL/blob/master/etc/git-struggles.md)
 >* [paper review](https://github.com/mysunk/TIL/blob/master/etc/paper-review.md)
+>* [useful python api](https://github.com/mysunk/TIL/blob/master/etc/python-api.md)
 
 # Contact
 If there is something wrong or you have any questions, send me an e-mail or make an issue.  
