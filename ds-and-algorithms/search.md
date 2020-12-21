@@ -30,7 +30,7 @@ class Solution(object):
         
         return answer
 ```
-This code is out of time.  
+This code is __out of time__.  
 From the __sort in ascending order__ part, It includes unnecessary search operations. 
 For example, if the sum of two of the four was 4, 
 all you had to do was check if there was a -4 and all the values were checked. 
@@ -65,4 +65,53 @@ class Solution(object):
                 answer += sum_2[-1*key_1] * val_1
 
         return answer
+```
+
+### Increasing Triplet Subsequence
+* problem: [link](https://leetcode.com/explore/challenge/card/december-leetcoding-challenge/571/week-3-december-15th-december-21st/3570/)  
+* candidate strategies:
+```python
+class Solution(object):
+    def increasingTriplet(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        LEN_LIST = len(nums)
+        
+        for i in range(1,LEN_LIST-1):
+            left, right = False, False
+            middle_num = nums[i]
+            for num in nums[:i]:
+                if num < middle_num:
+                    left = True
+                    break
+            for num in nums[i+1:]:
+                if num > middle_num:
+                    right = True
+                    break
+            if left * right == True:
+                return True
+        return False
+```
+This was accepted but took a lot of time because it contains a repeated search.  
+The improved solution is here:
+
+```python
+class Solution(object):
+    def increasingTriplet(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        
+        min1 = min2 = 2**32
+        for num in nums:
+            min1 = min(min1, num)
+            if min1 < num < min2:
+                min2 = num
+            if num > min2:
+                return True
+            
+        return False
 ```
