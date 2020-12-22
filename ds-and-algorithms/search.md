@@ -115,3 +115,63 @@ class Solution(object):
             
         return False
 ```
+
+### Decoded String at Index
+* problem: [link](https://leetcode.com/explore/challenge/card/december-leetcoding-challenge/571/week-3-december-15th-december-21st/3572/)  
+* candidate strategies:
+```python
+class Solution:
+    def decodeAtIndex(self, S: str, K: int) -> str:
+        
+        prev_len = 0
+        prev_str = ''
+        
+        for s in S:
+            if s.isdigit():
+                if prev_len * int(s) >= K:
+                    idx = K % prev_len
+                    return prev_str[idx-1]
+                prev_len = prev_len * int(s)
+                prev_str = prev_str * int(s)
+            else:
+                prev_len += 1
+                if prev_len == K:
+                    return s
+                prev_str += s
+```
+This got time Time Limit Exceeded.  
+The process of continuing to combine and increase the strings seems to have taken a lot of time.  
+To eliminate this process, follow the steps below:
+1. Count the length of the entire string.
+2. Reverse the subset corresponding to Kth index.
+<!---------
+문자열을 계속 합치고 늘리는 과정에서 시간이 많이 소요된 것 같다.  
+이러한 과정을 없애기 위해 아래와 같이  
+1. 전체 문자열의 길이를 세고
+2. K번째에 해당하는 하위 집합을 역추적 한다.
+----->
+```python
+class Solution:
+    def decodeAtIndex(self, S: str, K: int) -> str:
+        
+        decoded_str_len = 0
+        
+        # size of the total str
+        for c in S:
+            if c.isdigit():
+                decoded_str_len *= int(c)
+            else:
+                decoded_str_len += 1
+        
+        for c in reversed(S):
+            # break condition
+            K %= decoded_str_len
+            
+            # update
+            if c.isdigit():
+                decoded_str_len /= int(c)
+            else:
+                if K == 0:
+                    return c
+                decoded_str_len -= 1
+```
