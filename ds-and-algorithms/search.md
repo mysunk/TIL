@@ -175,3 +175,25 @@ class Solution:
                     return c
                 decoded_str_len -= 1
 ```
+### Check Array Formation Through Concatenation
+* problem: [link](https://leetcode.com/explore/challenge/card/january-leetcoding-challenge-2021/579/week-1-january-1st-january-7th/3589/)  
+* candidate strategies:
+```python
+class Solution:
+    def canFormArray(self,arr: List[int], pieces:):
+        
+        start_element = dict()
+        for piece in pieces:
+            start_element[piece[0]] = piece
+        
+        form_arr = []
+        
+        for num in arr:
+            form_arr += start_element.get(num, [])
+            print(form_arr)
+        return form_arr == arr
+```
+<!-------
+첫번째 원소만 저장하는 딕셔너리를 만들면 문제를 쉽게 해결할 수 있다.
+---------->
+Creating a dictionary that stores only the first element can solve the problem easily.
