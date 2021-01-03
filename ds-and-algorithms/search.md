@@ -1,5 +1,39 @@
 search
 ==================
+### Exhaustive search
+#### 1. bture force
+#### 2. bitmask
+#### 3. permutation
+#### 4. backtracking
+* constraint를 만족하는 모든 가능한 조합을 살펴보는 것
+* A general algorithm for finding all (or some) solutions to some computational problems, notably constraint satisfaction problems
+> 1. 모든 경우의 수를 탐색하고
+> 2. 특정 조건을 만족하지 않는 경우 pass
+* example: [Beautiful Arrangement](https://leetcode.com/explore/challenge/card/january-leetcoding-challenge-2021/579/week-1-january-1st-january-7th/3591/)
+```python
+class Solution:
+    def countArrangement(self, n: int) -> int:
+        arr = [i for i in range(1,n+1)]
+        self.answer = 0
+        
+        def dfs(loc, rest_arr):
+            if len(rest_arr) == 0:
+                # end
+                self.answer += 1
+                return
+                
+            for element in rest_arr:
+                if loc % element == 0 or element % loc == 0:
+                    rest_cp = rest_arr.copy()
+                    rest_cp.remove(element)
+                    dfs(loc+1, rest_cp)
+                else:
+                    continue
+            
+        dfs(1, arr)
+        return self.answer
+```
+#### 5. bfs/dfs
 
 ## tricky problems
 ### 4Sum II
