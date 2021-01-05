@@ -12,9 +12,11 @@ today I learned :books:
 ## Research
 >* [paper review](https://github.com/mysunk/TIL/blob/master/etc/paper-review.md)
 
+## Python
+>* [useful python api](https://github.com/mysunk/TIL/blob/master/python/python-api.md)
+>* [python_struggles](https://github.com/mysunk/TIL/blob/master/python/python-struggles.md)
 ## Etc
 >* [git struggles](https://github.com/mysunk/TIL/blob/master/etc/git-struggles.md)
->* [useful python api](https://github.com/mysunk/TIL/blob/master/etc/python-api.md)
 >* [as a developer](https://github.com/mysunk/TIL/blob/master/etc/as-a-developer.md)
 
 # Contact
