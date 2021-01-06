@@ -8,13 +8,14 @@ today I learned :books:
 >* [dynamic programming](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/DP.md)
 >* [binary tree](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/Tree.md)
 >* [search](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/search.md)
+>>* [linked list](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/linked-list.md)
 
 ## Research
 >* [paper review](https://github.com/mysunk/TIL/blob/master/etc/paper-review.md)
 
 ## Python
 >* [useful python api](https://github.com/mysunk/TIL/blob/master/python/python-api.md)
->* [python_struggles](https://github.com/mysunk/TIL/blob/master/python/python-struggles.md)
+>* [python struggles](https://github.com/mysunk/TIL/blob/master/python/python-struggles.md)
 ## Etc
 >* [git struggles](https://github.com/mysunk/TIL/blob/master/etc/git-struggles.md)
 >* [as a developer](https://github.com/mysunk/TIL/blob/master/etc/as-a-developer.md)
