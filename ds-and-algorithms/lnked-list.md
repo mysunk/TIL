@@ -18,8 +18,8 @@ Linked list
 > 4. Have old last node point to new node
 > 5. Update tail to point to new node
 #### Removing at the Tail
-* Removing at the tail of a singly linked list is not efficient!
-* There is no constant time way to update the tail to point to the previous node
+> * Removing at the tail of a singly linked list is not efficient!
+> * There is no constant time way to update the tail to point to the previous node
  
 ## tricky problems
 ### Merge Two Sorted Lists
