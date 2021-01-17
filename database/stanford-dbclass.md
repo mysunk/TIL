@@ -1,9 +1,14 @@
 Database Stanford Dbclass
 =======
 This file summary about stanford dbclass uploaded [here](https://www.youtube.com/playlist?list=PL6hGtHedy2Z4EkgY76QOcueU8lAC4o6c3).  
-* context should be added
 
-## [01-01] introduction
+## Context
+>[1-1](#1-1-introduction) Introduction    
+>[2-1](#2-1-relational-model) Relational model  
+>[2-2](#2-2-querying-relational-databases) Querying relational databases  
+>[3-1](#3-1-well-formed-xml) Well-formed xml
+
+## 1-1. introduction
 ### Database Management system (DBMS)
 provides
 1. massive
@@ -35,7 +40,7 @@ provides
 * DB application developer: programs that operate on database
 * Database administrator: load data, keeps manages smoothly
 
-## [02-01] relational model
+## 2-1. relational model
 ### Database
 
 * set of named relations (tables)
@@ -48,7 +53,7 @@ provides
 ![db_example](../img/img2.JPG)
 * key: 모든 tuple을 특정할 수 있는 attribute나 set of attributes
 
-## [02-02] Querying relational databases
+## 2-2. Querying relational databases
 ### Step in creating and using a relational databases
 ![db_example](../img/img1.JPG)
 
@@ -61,3 +66,40 @@ provides
 * SQL: actual / implemented
 
 ![db_example](../img/img3.JPG)
+
+## 3-1. Well-formed xml
+### XML
+- Extensible Markup Language
+- standard for data representation and exchange
+- similar to HTML
+    * 다른점: Tag가 formatting이 아니고 contents
+- Basic constructs
+    - Tagged elements (nested)
+    - attributes
+    - text
+![db_example](../img/img4.PNG)
+
+### Relational model v.s XML
+|      |Relational|XML|
+|------|---|---|
+|Structure|Tables|Hierarchical, Tree, graph|
+|Schema|Fixed in advance|Flexible, self-describing|
+|Queries|Simple, nice|less so|
+|Ordering|None|Implied|
+|Implementation|Native|Add-on|
+
+### Well-formed XML
+다음 basic structural requirements를 준수함
+> 1. single root element
+> 2. matched tags, proper nesting
+> 3. unique attribute swithin elements
+
+![db_example](../img/img5.JPG)
+
+### Displaying XML
+use rule-based language to translate to HTML such as
+- CSS
+- XSL
+
+![db_example](../img/img6.JPG)
+단, translate 전에 well-formed structure를 충족해야 함

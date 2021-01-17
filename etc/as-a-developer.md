@@ -13,3 +13,16 @@ REF: [link](https://www.youtube.com/watch?v=iKKAvZ8JQBs&feature=youtu.be)
 > 2. git convention 지키기
 > 3. 오픈소스 기여  
 > 4. 잔디, 코드, 커밋 내역, ...  
+
+### backend developer
+REF: [link](https://www.youtube.com/watch?v=89bFo003oik)
+* 데이터 사이언티스트가 백엔드 개발을 할 줄 모르면 할 수 있는 일이 많이 줄어든다
+* 취업 시장에서 원하는 인재상 2가지:
+    - cs 전공지식이 탄탄하거나
+    - 개발을 진짜 잘하거나    
+    
+### commit시 주의사항
+* commit message에 바꾼 내용을 전부 적어야함
+* 한가지 일을 단위로 하는 것이 좋다
+    * fix, refactor, add, ...
+    * 안 좋은 예시: fix ~~ 라는 msg를 작성하고 실제로는 여러가지를 변경한 경우

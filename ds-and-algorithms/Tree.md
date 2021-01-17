@@ -1,5 +1,10 @@
 Binary tree
 ==================
+### DFS
+* stack
+* recursion
+### BFS
+* queue
 
 ## tricky problems
 ### Smallest Subtree with all the Deepest Nodes
