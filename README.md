@@ -10,6 +10,9 @@ today I learned :books:
 >* [search](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/search.md)
 >* [linked list](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/linked-list.md)
 
+### Database
+>* [database stanford course](https://github.com/mysunk/TIL/tree/master/database/stanford-dbclass.md)
+
 ### linux
 >* [linux](https://github.com/mysunk/TIL/tree/master/linux/linux-struggles.md)
 
