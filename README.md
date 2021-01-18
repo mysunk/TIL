@@ -28,7 +28,7 @@ today I learned :books:
 >* [python struggles](https://github.com/mysunk/TIL/blob/master/python/python-struggles.md)
 
 ## Git
->* [git struggles](https://github.com/mysunk/TIL/blob/master/etc/git-struggles.md)
+>* [git struggles](https://github.com/mysunk/TIL/blob/master/git/git-struggles.md)
 
 ## Etc
 >* [as a developer](https://github.com/mysunk/TIL/blob/master/etc/as-a-developer.md)
