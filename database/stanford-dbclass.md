@@ -7,6 +7,7 @@ This file summary about stanford dbclass uploaded [here](https://www.youtube.com
 >[2-1](#2-1-relational-model) Relational model  
 >[2-2](#2-2-querying-relational-databases) Querying relational databases  
 >[3-1](#3-1-well-formed-xml) Well-formed xml
+---
 
 ## 1-1. introduction
 ### Database Management system (DBMS)
@@ -76,8 +77,9 @@ provides
 - Basic constructs
     - Tagged elements (nested)
     - attributes
-    - text
-![db_example](../img/img4.PNG)
+    - text  
+
+![db_example](../img/img4.png)
 
 ### Relational model v.s XML
 |      |Relational|XML|
