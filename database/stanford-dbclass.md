@@ -3,10 +3,10 @@ Database Stanford Dbclass
 This file summary about stanford dbclass uploaded [here](https://www.youtube.com/playlist?list=PL6hGtHedy2Z4EkgY76QOcueU8lAC4o6c3).  
 
 ## Context
->[1-1](#1-1-introduction) Introduction    
->[2-1](#2-1-relational-model) Relational model  
->[2-2](#2-2-querying-relational-databases) Querying relational databases  
->[3-1](#3-1-well-formed-xml) Well-formed xml
+* [1-1](#1-1-introduction) Introduction    
+* [2-1](#2-1-relational-model) Relational model  
+* [2-2](#2-2-querying-relational-databases) Querying relational databases  
+* [3-1](#3-1-well-formed-xml) Well-formed xml
 ---
 
 ## 1-1. introduction
