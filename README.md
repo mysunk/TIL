@@ -30,6 +30,10 @@ today I learned :books:
 ## Git
 >* [git struggles](https://github.com/mysunk/TIL/blob/master/git/git-struggles.md)
 
+## Machine Learning
+>* [ml struggles](https://github.com/mysunk/TIL/blob/master/machine-learning/ML-struggles.md)
+
+
 ## Etc
 >* [as a developer](https://github.com/mysunk/TIL/blob/master/etc/as-a-developer.md)
 >* [paper review](https://github.com/mysunk/TIL/blob/master/etc/paper-review.md)
