@@ -50,3 +50,22 @@ Dynamic Programming
 ### Palindrome Partitioning
 * problem: [link](https://leetcode.com/explore/challenge/card/december-leetcoding-challenge/570/week-2-december-8th-december-14th/3565/)  
 * candidate strategies:
+
+### Arithmetic Slices
+* problem: [link](https://leetcode.com/explore/challenge/card/february-leetcoding-challenge-2021/586/week-3-february-15th-february-21st/3644/)
+* solution:
+* 처음에 i, j를 for loop를 돌며 체크했으나 시간 초과
+```python
+class Solution:
+    def numberOfArithmeticSlices(self, A):
+        
+        len_list = len(A)
+        dp = [0 for _ in range(len_list)]
+        for i in range(2, len_list):
+            if A[i] - A[i-1] == A[i-1] - A[i-2]:
+                dp[i] = dp[i-1] + 1
+        
+        return sum(dp)
+```
+* element 하나를 추가하였을 때 i+1보다 arithmetic series가 n+1개 더 많아짐
+* 여기서 n은 i번째의 arithmetic series 수
