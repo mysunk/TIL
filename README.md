@@ -1,6 +1,5 @@
 TIL
 =====================
-![title_img](img/img0.jpg)
 
 today I learned :books:  
 ---------------
