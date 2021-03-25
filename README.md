@@ -36,6 +36,7 @@ today I learned :books:
 ## Etc
 >* [as a developer](https://github.com/mysunk/TIL/blob/master/etc/as-a-developer.md)
 >* [paper review](https://github.com/mysunk/TIL/blob/master/etc/paper-review.md)
+>* [latex](https://github.com/mysunk/TIL/blob/master/etc/latex.md)
 
 # Contact
 If there is something wrong or you have any questions, send me an e-mail or make an issue.  
