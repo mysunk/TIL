@@ -11,7 +11,7 @@ today I learned :books:
 >* [dynamic programming](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/DP.md)
 >* [binary tree](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/Tree.md)
 >* [search](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/search.md)
->* [linked list](https://github.com/mysunk/TIL/tree/master/ds-and-algorithms/linked-list.md)
+>* [linked list](https://github.com/mysunk/TIL/blob/master/ds-and-algorithms/lnked-list.md)
 
 ### :cloud: Database
 >* [database stanford course](https://github.com/mysunk/TIL/tree/master/database/stanford-dbclass.md)
