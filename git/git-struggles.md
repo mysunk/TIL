@@ -47,3 +47,11 @@ git merge -s recursive -X theirs origin/master
 ```
 git rebase --continue
 ```
+
+### :cloud: 오픈소스에 PR시 permission denied 문제
+* error log
+```
+remote: Permission to microsoft/otdd.git denied to mysunk.
+fatal: unable to access 'https://github.com/microsoft/otdd/': The requested URL returned error: 403
+```
+ 
