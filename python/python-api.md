@@ -44,3 +44,12 @@ Begin
 Something
 End
 ```
+
+### 다른 프로젝트의 함수를 불러오는 법
+* 해당 함수가 module안에 있어야 함
+    * module화 하는 법: __init__.py empty 파일을 추가 
+```
+import sys
+sys.path.insert(0, '/the/folder/path/name-package/')
+from name-package import name-module
+```
