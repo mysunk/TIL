@@ -17,6 +17,10 @@
 * 해당 부분 삭제
 * 참고: [link](https://github.com/microsoft/vscode-jupyter/issues/3993)
 
+* 다음 순서로 해결
+> 1. when expression 수정
+> 2. (1이 안될 시) 동일한 key binding을 가진 다른 command 확인
+
 
 ### Frequently used shortcuts
 | Command | Windows|
