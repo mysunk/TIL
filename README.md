@@ -1,8 +1,5 @@
 TIL
 =====================
-## TODO LIST (04-12)
-* VScode와 pycharm 차이점 찾아보기
-* VScode 개발환경 셋팅하기
 
 # Context
 ## CS
