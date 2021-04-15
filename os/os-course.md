@@ -3,7 +3,8 @@ Operating Systems
 This file summary about Neso Academy OS course uploaded [here](https://www.youtube.com/playlist?list=PLBlnK6fEyqRiVhbXDGLXDk_OQAeuVcp2O).  
 
 ## Context
->[1.](#1.-introduction-to-operating-systems) Introduction to Operating Systems  
+1. Introduction to Operating Systems  
+2. Basics of OS (Computer System Operation)
 
 ## 1. Introduction to Operating Systems
 ![img](../img/img7.png)
@@ -29,3 +30,5 @@ This file summary about Neso Academy OS course uploaded [here](https://www.youtu
 * Interface btw User and hardware
 * Resource allocation
 * Management of memory, security, etc
+
+## 2. Basics of OS (Computer System Operation)

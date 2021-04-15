@@ -24,6 +24,7 @@ TIL
 ## Python
 >* [useful python api](https://github.com/mysunk/TIL/blob/master/python/python-api.md)
 >* [python struggles](https://github.com/mysunk/TIL/blob/master/python/python-struggles.md)
+>* [IDE](https://github.com/mysunk/TIL/blob/master/python/IDE.md)
 
 ## Git
 >* [git struggles](https://github.com/mysunk/TIL/blob/master/git/git-struggles.md)

@@ -53,3 +53,26 @@ import sys
 sys.path.insert(0, '/the/folder/path/name-package/')
 from name-package import name-module
 ```
+
+### Multiprocessing과 partial
+* jupyter notebook에서 multiprocessing 쓰는 법
+> 1. utils.py 에 FUNC이라는 함수 구현
+> 2. ipython에서 다음과같이 실행
+
+```python
+import multiprocessing
+from functools import partial
+from utils import FUNC
+
+PROCESSES = multiprocessing.cpu_count()
+if __name__ == '__main__':
+    p = multiprocessing.Pool(processes = PROCESSES)
+    helper = partial(FUNC, arg_defult = arg_defult)
+    result = p.map(helper, arg)
+```
+
+### 모듈 수정 후 load
+```python
+from importlib import reload
+reload(func_to_reload)
+```

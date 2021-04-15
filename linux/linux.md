@@ -9,3 +9,7 @@ linux commands and studies
 ```commandline
 ln -s [원본파일] [대상파일]
 ```
+
+### vscode 원격 접속
+* server에 openssh-server 설치 확인
+* local접속시 port번호는 22로 설정
