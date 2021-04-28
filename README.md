@@ -16,7 +16,7 @@ TIL
 >* [operating system course](https://github.com/mysunk/TIL/tree/master/os/os-course.md)
 
 ### :cloud: Linux
->* [linux](https://github.com/mysunk/TIL/tree/master/linux/linux-struggles.md)
+>* [linux](https://github.com/mysunk/TIL/blob/master/linux/linux.md)
 
 ## Python
 >* [useful python api](https://github.com/mysunk/TIL/blob/master/python/python-api.md)
