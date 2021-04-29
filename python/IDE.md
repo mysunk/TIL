@@ -6,7 +6,9 @@
 * 다음 순서로 해결
 > 1. when expression 수정
 > 2. (1이 안될 시) 동일한 key binding을 가진 다른 command 확인
+> 3. 최근에 설치한 extension 확인
 
+1-2.
 * shortcut 적용이 안 된다면 'When expression'을 수정해야 함
 * 예를들어, python interactive을 사용할 때 단축키는 jupyter에서만 사용 가능한 조건이 있을 수 있음
 * example: jupyter:run selection/line in interactive window는 아래와같이 설정되어있음
@@ -21,6 +23,8 @@
 * 해당 부분 삭제
 * 참고: [link](https://github.com/microsoft/vscode-jupyter/issues/3993)
 
+3.
+* extension 설치 시 keybinding이 중복될 수 있음. 잘 쓰던 단축키가 안되면 최근 설치한 extension 삭제 후 시도
 
 ### Frequently used shortcuts
 | Command | Windows|
