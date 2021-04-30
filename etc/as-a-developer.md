@@ -26,3 +26,13 @@ REF: [link](https://www.youtube.com/watch?v=89bFo003oik)
 * 한가지 일을 단위로 하는 것이 좋다
     * fix, refactor, add, ...
     * 안 좋은 예시: fix ~~ 라는 msg를 작성하고 실제로는 여러가지를 변경한 경우
+    
+### 작업 원칙!
+1. .py로 작업
+> * 반복적으로 사용되는 함수
+> * 특정 기능 수행하는 class, 모델
+
+2. .ipynb
+> * 이것 저것 분석한 내용: analysis_{today_date}.ipynb 로 저장
+    > * 해당 파일 내에서만 사용되는 함수는 따로 빼지 말고 그 안에서만 사용할 것 
+> * 인사이트를 찾은 분석 내용: {topic}.ipynb 로 저장
