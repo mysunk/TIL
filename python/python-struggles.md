@@ -20,3 +20,9 @@ sys.path.insert(0, 'path-to-dir')
 ```
 array([], shape = (0, n))
 ```
+
+### Nan이 있는 데이터에서 Dataframe.sum 사용 시 주의사항
+다음과 같이 연산됨
+1. nan + value = value
+2. nan + nan = 0
+=> summation 전에 따로 처리 필요
