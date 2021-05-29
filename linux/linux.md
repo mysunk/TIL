@@ -13,3 +13,16 @@ ln -s [원본파일] [대상파일]
 ### vscode 원격 접속
 * server에 openssh-server 설치 확인
 * local접속시 port번호는 22로 설정
+
+### 원격 접속 configuration setting
+1. config 파일 디렉토리
+```commandline
+C:/Users/user_name/.ssh/config
+```
+2. 형식
+```commandline
+Host anything
+HostName 172.26.199.3
+User name_of_host
+Port 22
+```
