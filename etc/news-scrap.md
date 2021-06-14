@@ -9,7 +9,7 @@ jupyter notebook을 쓴 뒤로 용량문제로 github 관리가 어려워졌다,
 
 ### [How to Remove Multicollinearity Using Python](https://towardsdatascience.com/how-to-remove-multicollinearity-using-python-4da8d9d8abb2)  
 
-#### Variance Inflation Factor
+#### Variance Inflation Factor (VIF)
 * multicollinearity를 파악하는 지표
 * 최소가 1이며 클 수록 multicollinearity가 크다고 판단
 * linear regression에서의 R^2를 이용한 지표
@@ -37,3 +37,36 @@ jupyter notebook을 쓴 뒤로 용량문제로 github 관리가 어려워졌다,
 
 publishment: [A graph placement methodology for fast chip design](https://www.nature.com/articles/s41586-021-03544-w)
 * 강화학습 기반의 graph convolutional neural network architecture
+
+## 2021-06-14
+
+### [“MRMR” Explained Exactly How You Wished Someone Explained to You](https://towardsdatascience.com/mrmr-explained-exactly-how-you-wished-someone-explained-to-you-9cf4ed27458b)
+
+#### MRMR
+* MRMR: Maximum Relevance — Minimum Redundancy 
+* 최대 관련성과 최대 중복성
+* 통용되는 feature selection 방법
+* feature간의 redundancy를 제거한 minimal optimal subset을 찾는 알고리즘
+
+Motivation: 
+* Best K features 가 K best feature가 아님  
+
+Algorithm:  
+* User input needed: select K
+1. Initialize: target과 가장 연관성이 높은 feature 1개를 select  
+2. Select next feature: score가 가장 높은 feature를 select  
+score = relevance(f | target) / redundancy(f | 현재까지 선택된 feature subset)  
+해석: target과의 관련성은 높고 현재까지 선택된 feature subset과의 중복성은 낮은 feature를 고름  
+3. Iterate until i = K
+
+#### 의문점
+* K는 어떻게 정할 것?
+
+#### code snippet
+```python
+!pip install git+https://github.com/smazzanti/mrmr
+from mrmr import mrmr_classif
+
+selected_features = mrmr_classif(X, y, K = K)
+```
+
