@@ -119,13 +119,22 @@ pd.get_dummies(data['column'])
 ```
 
 ### 6. 범주형 feature 그룹화
-범주형 열 그룹화 방안
-1. 가장 높은 빈도를 가진 label을 선택
-2. 피벗 테이블
-   * ex) user별로 그룹화
-3. one-hot encoding 적용 후 feature별 그룹 적용
+- 범주형 열 그룹화
+   1. 가장 높은 빈도를 가진 label을 선택
+   2. 피벗 테이블
+      * ex) user별로 그룹화
+   3. one-hot encoding 적용 후 feature별 그룹 적용
 
-### 7. 숫자형 feature 그룹화
-보통 합계 및 평균을 통해 그룹화
+- 숫자형 feature 그룹화
+   - 보통 합계 및 평균을 통해 그룹화
 
-### 8. 
+### 7. feature 분할
+- 그룹화와 반대되는 개념
+- ex) Luther N. Gonzalez 를 first name, middle name, last name으로 분할
+
+### 8. Scaling
+- 거리 기반 알고리즘에서 필요
+- 표준화, 정규화
+
+### 9. 날짜 분할
+- 1996-10-04 를 1996, 1, 04 로 분할
