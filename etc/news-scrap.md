@@ -1,10 +1,6 @@
 AI-related scraps
 =======
 
-jupyter notebook을 쓴 뒤로 용량문제로 github 관리가 어려워졌다,,  
-최근에 취업준비를 하다보니 산업 동향과 기술동향을 따라갈 필요성을 느꼈다.  
-1일 1 스크래핑 도전 ㅠ  
-
 ## 2021-06-13
 
 ### [How to Remove Multicollinearity Using Python](https://towardsdatascience.com/how-to-remove-multicollinearity-using-python-4da8d9d8abb2)  
@@ -70,3 +66,66 @@ from mrmr import mrmr_classif
 selected_features = mrmr_classif(X, y, K = K)
 ```
 
+## 2021-06-25
+### [Fundamental Techniques of Feature Engineering for Machine Learning](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
+
+#### Feature engineering technique 요약
+* Imputation
+* Handling Outliers
+* Binning
+* Log Transform
+* One-hot encodings
+* Grouping Operations
+* Feature Split
+* Scaling
+* Extracting Date
+
+### 1. Imputation
+#### 1-1. Numerical imputation
+- 만약 해당 feature가 1과 NaN만 있다면 해당 부분은 0일 가능성이 높음 => 0으로 대체
+   * ex) 고객 방문 여부와 같이 방문자만 labeling돼서 방문이 안 되면 값이 없는 경우
+- 일반적으로는 0 혹은 중앙값으로 대치
+#### 1-2. Categorical imputation
+- 가장 많이 발생한 값으로 대치하는 것이 일반적
+- 만약 변수들이 uniform하게 분포되어있는 경우, Others로 따로 빼는 것이 합리적
+
+### 2. Handling Outliers
+* 가장 좋은 방법은 시각화를 해보는 것
+* 통계적 방법론은 빠르다는 장점이 있다
+#### 2-1. 표준편차 기반
+- z-score 기반으로 upper outlier와 lower outlier를 거름
+
+#### 2-2. 백분위 기반
+- 상위 x% 이상, 상위 x% 이하를 이상값으로 간주
+- 표준편차 기반과 별 다를 바 없어 보임
+
+#### 2-3. drop or cap
+- 버리는 대신 limit를 두어, 그걸 넘을 시 해당 limit으로 replace함
+
+### 3. Binning
+- 범주 혹은 범위를 더 상위 개념으로 포괄함
+- 어떻게보면 정보를 버리는 것이지만, robust하고 overfitting에 대응 가능함
+- "Sacrifice information and regularize data"
+
+### 4. Log Transform
+- motivation: 15~20세의 차이는 65~70세와 같지 않음
+- 로그 변환은 이러한 크기 차이를 정규화함
+- 변환 후에는 분포가 정규 분포에 가까워짐
+
+### 5. One-hot encoding
+- 정보 손실 없이 범주형 데이터를 그룹화
+```python
+pd.get_dummies(data['column'])
+```
+
+### 6. 범주형 feature 그룹화
+범주형 열 그룹화 방안
+1. 가장 높은 빈도를 가진 label을 선택
+2. 피벗 테이블
+   * ex) user별로 그룹화
+3. one-hot encoding 적용 후 feature별 그룹 적용
+
+### 7. 숫자형 feature 그룹화
+보통 합계 및 평균을 통해 그룹화
+
+### 8. 
