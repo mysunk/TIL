@@ -138,3 +138,20 @@ pd.get_dummies(data['column'])
 
 ### 9. 날짜 분할
 - 1996-10-04 를 1996, 1, 04 로 분할
+
+## 2021-06-26
+### [4 Tips for Advanced Feature Engineering and Preprocessing](https://towardsdatascience.com/4-tips-for-advanced-feature-engineering-and-preprocessing-ec11575c09ea)
+
+Isolation Forest
+- outlier detection방법 중 하나
+- 어떤 sample이 얼마나 쉽게 isolation될 수 있는지 확인
+
+```python
+from sklearn.ensemble import IsolationForest
+clf = IsolationForest(contamination=0.01, behaviour='new')
+outliers = clf.fit_predict(data)
+```
+
+### [My secret sauce to be in top 2% of a kaggle competition](https://towardsdatascience.com/my-secret-sauce-to-be-in-top-2-of-a-kaggle-competition-57cff0677d3c)
+
+### Identifying noisy features
