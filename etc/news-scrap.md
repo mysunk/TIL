@@ -155,3 +155,22 @@ outliers = clf.fit_predict(data)
 ### [My secret sauce to be in top 2% of a kaggle competition](https://towardsdatascience.com/my-secret-sauce-to-be-in-top-2-of-a-kaggle-competition-57cff0677d3c)
 
 ### Identifying noisy features
+
+Trend correlation
+- feature trend가 train-evaluation-test 세트에서 동일한 추세를 유지하지 않으면 과적합으로 이루어질 수 있음
+- 이 경우, 모델이 test데이터에 적용할 수 있는 무언가를 학습하게 되면 문제가 되는 것
+- ex) trend의 correlation이 0.99: not noisy feature!
+- 낮은 trend correlation을 갖는 feature는 제거하는 게 좋을 수 있음 (evaluation 성능이 좋더라도도)
+
+### Leakage Detection
+- 일반적으로, target에 importance가 지나치게 큰 feature는 leakage가 발생했을 가능성이 있으며 이는 과적합의 원인
+- leakage 발생원인 파악은 어렵다...
+- 이부분 잘 이해 안 가는데 일단 추측해보면
+   - 어떤 feature가 NaN에서는 0이고 나머지에서는 1이다.
+   - target은 NaN이 들어오면 무조건 0을 뱉을 것
+   - 하지만 해당 feature는 거의 다 NaN이고, 값을 가진 instance는 몇 개 안 됨
+   - 따라서 일반화하기 어려운 경우
+
+## 2021-06-27 TODO
+### [How we made EfficientNet more efficient](https://towardsdatascience.com/how-we-made-efficientnet-more-efficient-61e1bf3f84b3)
+
