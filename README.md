@@ -28,13 +28,14 @@ TIL
 
 ## Machine Learning
 >* [ml struggles](https://github.com/mysunk/TIL/blob/master/machine-learning/ML-struggles.md)
-
+>* [news scrapping](https://github.com/mysunk/TIL/blob/master/machine-learning/news-scrap.md)
+>* [study](https://github.com/mysunk/TIL/blob/master/machine-learning/study.md)
+>* [competition](https://github.com/mysunk/TIL/blob/master/machine-learning/competition.md)
 
 ## Etc
 >* [as a developer](https://github.com/mysunk/TIL/blob/master/etc/as-a-developer.md)
 >* [paper review](https://github.com/mysunk/TIL/blob/master/etc/paper-review.md)
 >* [latex](https://github.com/mysunk/TIL/blob/master/etc/latex.md)
->* [news scrapping](https://github.com/mysunk/TIL/blob/master/etc/news-scrap.md)
 
 # Contact
 If there is something wrong or you have any questions, send me an e-mail or make an issue.  

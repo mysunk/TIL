@@ -1,9 +1,7 @@
-AI-related scraps
+AI-related study
 =======
 
-## 2021-06-13
-
-### [How to Remove Multicollinearity Using Python](https://towardsdatascience.com/how-to-remove-multicollinearity-using-python-4da8d9d8abb2)  
+## [How to Remove Multicollinearity Using Python](https://towardsdatascience.com/how-to-remove-multicollinearity-using-python-4da8d9d8abb2)  
 
 #### Variance Inflation Factor (VIF)
 * multicollinearity를 파악하는 지표
@@ -26,17 +24,7 @@ AI-related scraps
     * VIF가 큰 feature 2개 vs 작은 feature 1개 검증 안됨
 * 단순히 방법만 보여주고 검증은 하지 않아서 아쉽,, 직접 해보거나 더 찾아봐야할 듯
 
-### [구글, 반도체 설계에 AI 적용..."수개월 걸리던 작업을 6시간 만에"](http://www.aitimes.com/news/articleView.html?idxno=138949)
-
-* 보통 수율 향상은 제조, 생산 부분에서 이루어지나 설계 시간을 단축했다는 점이 혁신적
-* 몇주 ~ 몇달 걸리는 칩 평면도 설계 작업을 6시간으로 단축
-
-publishment: [A graph placement methodology for fast chip design](https://www.nature.com/articles/s41586-021-03544-w)
-* 강화학습 기반의 graph convolutional neural network architecture
-
-## 2021-06-14
-
-### [“MRMR” Explained Exactly How You Wished Someone Explained to You](https://towardsdatascience.com/mrmr-explained-exactly-how-you-wished-someone-explained-to-you-9cf4ed27458b)
+## [“MRMR” Explained Exactly How You Wished Someone Explained to You](https://towardsdatascience.com/mrmr-explained-exactly-how-you-wished-someone-explained-to-you-9cf4ed27458b)
 
 #### MRMR
 * MRMR: Maximum Relevance — Minimum Redundancy 
@@ -66,8 +54,7 @@ from mrmr import mrmr_classif
 selected_features = mrmr_classif(X, y, K = K)
 ```
 
-## 2021-06-25
-### [Fundamental Techniques of Feature Engineering for Machine Learning](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
+## [Fundamental Techniques of Feature Engineering for Machine Learning](https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114)
 
 #### Feature engineering technique 요약
 * Imputation
@@ -139,8 +126,7 @@ pd.get_dummies(data['column'])
 ### 9. 날짜 분할
 - 1996-10-04 를 1996, 1, 04 로 분할
 
-## 2021-06-26
-### [4 Tips for Advanced Feature Engineering and Preprocessing](https://towardsdatascience.com/4-tips-for-advanced-feature-engineering-and-preprocessing-ec11575c09ea)
+## [4 Tips for Advanced Feature Engineering and Preprocessing](https://towardsdatascience.com/4-tips-for-advanced-feature-engineering-and-preprocessing-ec11575c09ea)
 
 Isolation Forest
 - outlier detection방법 중 하나
@@ -152,7 +138,7 @@ clf = IsolationForest(contamination=0.01, behaviour='new')
 outliers = clf.fit_predict(data)
 ```
 
-### [My secret sauce to be in top 2% of a kaggle competition](https://towardsdatascience.com/my-secret-sauce-to-be-in-top-2-of-a-kaggle-competition-57cff0677d3c)
+## [My secret sauce to be in top 2% of a kaggle competition](https://towardsdatascience.com/my-secret-sauce-to-be-in-top-2-of-a-kaggle-competition-57cff0677d3c)
 
 ### Identifying noisy features
 
@@ -172,5 +158,4 @@ Trend correlation
    - 따라서 일반화하기 어려운 경우
 
 ## 2021-06-27 TODO
-### [How we made EfficientNet more efficient](https://towardsdatascience.com/how-we-made-efficientnet-more-efficient-61e1bf3f84b3)
-
+## [How we made EfficientNet more efficient](https://towardsdatascience.com/how-we-made-efficientnet-more-efficient-61e1bf3f84b3)
