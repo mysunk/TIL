@@ -4,6 +4,7 @@ TIL
 ## 2021-06-29 TODO
 - benchmarking 코드 따로 정리해서 public으로 돌리기 (가능하면? papers with code에 추가)
 - 자주 쓰는 코드 함수화해서 md 만들기
+- [coursera kaggle우승자 강의 수강](https://www.coursera.org/learn/competitive-data-science#syllabus)
 
 # Context
 ## CS
