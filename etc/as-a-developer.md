@@ -62,6 +62,10 @@ Q) Label encoding과 one hot encoding?
 - 모델이 오해하지 않게
 - but 반드시 label encoding으로 해야하는 경우와 반드시 one hot encoding으로 해야하는 경우는 나눠야함
 
+Q) Outlier 처리?
+- outlier처럼 보이는 애들도 사실은 outlier가 아닐 수 있음 (ex) 트래픽 사용량 heavy user)
+- 처리 신중하게 해야함
+
 Q) DNN 명목변수 사용 가능?
 - label encoding 후 적용
 - Standard는 좀 이상하니 normalize로 적용
