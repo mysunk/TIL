@@ -43,5 +43,12 @@ pip install pyzmq
 ```
 ref: [stack overflow](https://stackoverflow.com/questions/67818911/failed-to-change-the-jupyter-kernel-in-vs-code/67833255#67833255)
 
-* 원인은 따로 설명되지 않았으나, base env에만 나타나는 문제라고 한다
+* 원인은 따로 설명되지 않았으나, base env에만 나타나는 문제라고 한다 => 확인해보니 venv에도 동일한 문제 나타남
 * 해결 후 VScode 재부팅 필요
+
+### import 오류
+* Anaconda python3.8 version들과 vscode 호환이 안되는 것 같다
+* 기본적인 numpy도 import가 안됨
+* python3.7로 낮춰서 해결..
+
+ref: [numpy doc](https://numpy.org/devdocs/user/troubleshooting-importerror.html)

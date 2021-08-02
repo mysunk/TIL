@@ -36,3 +36,37 @@ REF: [link](https://www.youtube.com/watch?v=89bFo003oik)
 > * 이것 저것 분석한 내용: analysis_{today_date}.ipynb 로 저장
     > * 해당 파일 내에서만 사용되는 함수는 따로 빼지 말고 그 안에서만 사용할 것 
 > * 인사이트를 찾은 분석 내용: {topic}.ipynb 로 저장
+
+
+### 데이터 분석 Tip
+Q) trouble shooting에 효율적인 방법론?
+- 데이터 종류별로 뭐가 좋다 하기 어려움 (같은데이터라도 다른특성 띨 수 있어서)
+- 데이터 분석을 통해 특성을 정의하고 그에 맞는 방법을 search하는게 효율적
+    - 어떤 스케일의 데이터 처리해야될 때?
+    - 다중공선성이 높다 => 검색
+    - feature selection: 수치, corr 어느정도
+    - 데이터 특성 파악 후 해당특성 검색
+__- 가장 중요한 것: domain 지식! 기반지식, 각각의 열들의 의미 이해__
+- 변수간의 관계 파악해서 그런 특징 검색하는 게 가장 best
+- __데이터, 비즈니스 필드에 대한 이해가 가장 중요__
+- 변수간의 상호작용은 데이터로 확인할 수 있지만 데이터를 잘 아는사람은 그냥 알고있음
+- 인과관계 없이도 상관관계가 있어보이면 인과관계가 있어보이는 데이터 찾아볼 수 있음
+
+Q) 모델 성능이 잘나오면 장땡일까?
+- 평가지표 100% 신뢰 x
+- test 데이터 분포에 따라 다름,, test는 outlier가 없으면 outlier처리 안해도 잘나올수도 있고..
+- 그래서 test case가 새로 업데이트될 때마다 model도 같이 update해야함
+
+Q) Label encoding과 one hot encoding?
+- 조심해서 해야함
+- 모델이 오해하지 않게
+- but 반드시 label encoding으로 해야하는 경우와 반드시 one hot encoding으로 해야하는 경우는 나눠야함
+
+Q) Outlier 처리?
+- outlier처럼 보이는 애들도 사실은 outlier가 아닐 수 있음 (ex) 트래픽 사용량 heavy user)
+- 처리 신중하게 해야함
+
+Q) DNN 명목변수 사용 가능?
+- label encoding 후 적용
+- Standard는 좀 이상하니 normalize로 적용
+- 실제로는 float처럼 보여도 명목인 애들도 많아서..ㄱㅊㄱㅊ
