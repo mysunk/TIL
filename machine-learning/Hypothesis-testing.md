@@ -52,11 +52,11 @@ the null hypothesis
 1. Level of significance를 설정
     * rejection region을 지정할 threshold
 2. Rejection region: 귀무가설이 기각되는 영억  
-![img](../img/img8.png)
+![img](../img/img8.PNG)
 
 ## Errors in Hypothesis testing
 * alpha와 beta는 trade off 관계
-![img](../img/img9.png)
+![img](../img/img9.PNG)
 
 ## Parametric and Non-Parametric Tests
 ### Parametric Tests
@@ -71,10 +71,10 @@ the null hypothesis
 * 표본이 하나일 때 모집단의 통계치와 표본집단의 통계치를 비교
 * 두 표본간에 검정을 할 때는 표본간의 관계가 독립되냐 아니냐에 따라 나뉨
     * 여기서 독립이란 완전히 서로 다른 모수 (population을 가질 때때
-![img](../img/img10.png)
+![img](../img/img10.PNG)
 
 ## General Form of a t-test
-![img](../img/img11.png)
+![img](../img/img11.PNG)
 
 ## Non-Parametric Alternatives
 * Wilcoxon Test: non-parametric analog of one sample ttest
@@ -86,7 +86,7 @@ of two sample t-test
     * 모평균과 마찬가지로 모비율인 p가 이럴것이다라고 설정된 2개의 가설중에서 하나의 가설을 선택하는 것
 * Large sample test (prop.test)
 
-![img](../img/img12.png)
+![img](../img/img12.PNG)
 
 * Small sample test (binom.test)
     * Calculated directly from binomial distribution
@@ -97,7 +97,7 @@ of two sample t-test
 * 샘플링된 데이터를 기반으로 모수의 범위를 추정하기 위해 사용됨
 => 샘플링된 표본이 연구중인 모집단을 얼마나 잘 대표하는지 측정하는 방법
 * General form  
-![img](../img/img13.png)
+![img](../img/img13.PNG)
 
 ## Hypothesis Tests of 3 or More Means
 * 3개 이상의 statistic을 검정할 때
@@ -143,13 +143,13 @@ of two sample t-test
 * 귀무가설이 옳다면 standardized variance는 둘이 같다
 
 ## 예제 풀이
-![img](../img/img14.png)
-![img](../img/img15.png)
-![img](../img/img16.png)
-![img](../img/img17.png)
-![img](../img/img18.png)
-![img](../img/img19.png)
-![img](../img/img20.png)
+![img](../img/img14.PNG)
+![img](../img/img15.PNG)
+![img](../img/img16.PNG)
+![img](../img/img17.PNG)
+![img](../img/img18.PNG)
+![img](../img/img19.PNG)
+![img](../img/img20.PNG)
 
 ## Non-Parametric Alternative
 * Kruskal-Wallis Rank Sum Test: non-parametric analog to ANOVA
