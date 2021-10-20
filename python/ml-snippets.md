@@ -7,6 +7,7 @@
 >* [plot dnn history](#plot-dnn-history)  
 >* [hyperopt](#hyperopt)
 >* [classification](#classification)
+>* [inference](#inference)
 
 ## preprocessing
 ```python
@@ -451,4 +452,13 @@ plt.xticks(range(3),['LGB','CAT','ENS'])
 plt.title('10-fold cv 성능 비교')
 plt.ylabel('AUC')
 plt.show()
+```
+
+## inference
+```python
+test_preds = []
+for model in models:
+  test_pred = model.predict(test)
+  test_preds.append(test_pred)
+final_preds = np.mean(test_preds, axis=0)
 ```
