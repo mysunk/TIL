@@ -2,11 +2,42 @@
 =======
 
 # context
+>* [preprocessing](#preprocessing)  
 >* [regression](#regression)  
 >* [plot dnn history](#plot-dnn-history)  
 >* [hyperopt](#hyperopt)
 >* [classification](#classification)
 
+## preprocessing
+```python
+from sklearn.preprocessing import LabelEncoder
+import numpy as np
+cat_features = ['continent', 'position', 'prefer_foot']
+le_dict = dict()
+
+def preprocessing(df, phase = 'train'):
+
+  df['contract_until'] = df['contract_until'].apply(lambda x : int(x[-4:])).astype(int)
+
+  df  = df.drop(['id','name'],axis = 1)
+
+  for col in cat_features:
+    if phase == 'train':
+      encoder = LabelEncoder()
+      unique_arr = np.unique(df[col])
+      encoder.fit(unique_arr)
+      le_dict[col] = encoder
+    else:
+      # train에 없는 게 있다면 replace
+      encoder = le_dict[col]
+      df[col] = df[col].apply(lambda x: x if x in encoder.classes_ else 'UNKNOWN')
+    df[col] = encoder.transform(df[col])
+  
+  return df
+
+train = preprocessing(train_raw.copy())
+test = preprocessing(test_raw.copy(), phase = 'test')
+```
 
 ## regression
 ```python
