@@ -34,12 +34,14 @@
 |화면 아래로 한줄 이동|`ctrl+y`|
 |화면 위로 한줄 이동|`ctrl+e`|
 
+
 ### VScode에서 jupyter notebook kernel 연결 실패
 1. Anaconda 설치 경로에 한글이 포함된 경우 => 경로에 한글 미포함 후 재설치
 2. ipykernel을 설치하라는 error가 반복적으로 나타나는 경우
 ```
 pip uninstall pyzmq
 pip install pyzmq
+conda install ipykernel # pip보다 conda 
 ```
 ref: [stack overflow](https://stackoverflow.com/questions/67818911/failed-to-change-the-jupyter-kernel-in-vs-code/67833255#67833255)
 
